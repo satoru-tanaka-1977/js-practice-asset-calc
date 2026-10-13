@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>積立・複利計算シミュレーター</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calc-container">
+    <h1>積立・複利計算</h1>
+    
+    <div class="input-group">
+      <label>毎月の積立額 (円)</label>
+      <input type="number" id="monthly" value="30000">
+    </div>
+
+    <div class="input-group">
+      <label>想定利回り (年利 %)</label>
+      <input type="number" id="rate" value="5">
+    </div>
+
+    <div class="input-group">
+      <label>積立期間 (年)</label>
+      <input type="number" id="years" value="20">
+    </div>
+
+    <button id="calc-btn">計算する</button>
+
+    <div class="result-group">
+      <h2>将来の想定資産額</h2>
+      <p id="result">ボタンを押すと計算されます</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
